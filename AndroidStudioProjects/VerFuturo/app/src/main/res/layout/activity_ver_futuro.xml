@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#100F0F"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context=".verFuturo">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        app:srcCompat="@drawable/aries" />
+
+    <TextView
+        android:id="@+id/txtVerFuturo"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#E7D6D6"
+        android:textSize="26dp" />
+
+    <Button
+        android:id="@+id/buttonVerFuturo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="volver" />
+</LinearLayout>
