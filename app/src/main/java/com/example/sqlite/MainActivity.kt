@@ -14,34 +14,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.sqlite.ui.theme.SqliteTheme
 
 class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            SqliteTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }
+    override fun onCreate(saveInstaceState: Bundle?){
+        super.onCreate(saveInstaceState)
+        setContentView(R.layout.a)
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    SqliteTheme {
-        Greeting("Android")
-    }
-}
